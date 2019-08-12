@@ -5,3 +5,10 @@ C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabb
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.csproj.CoreCompileInputs.cache
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.exe
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.pdb
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\bin\Debug\AnarchyGrabber.exe.config
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\bin\Debug\AnarchyGrabber.exe
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\bin\Debug\AnarchyGrabber.pdb
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\obj\Debug\AnarchyGrabber.csprojAssemblyReference.cache
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\obj\Debug\AnarchyGrabber.csproj.CoreCompileInputs.cache
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\obj\Debug\AnarchyGrabber.exe
+C:\Users\ilink\Downloads\AnarchyGrabber-master\AnarchyGrabber-master\AnarchyGrabber\obj\Debug\AnarchyGrabber.pdb
