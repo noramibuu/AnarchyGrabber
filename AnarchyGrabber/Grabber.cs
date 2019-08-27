@@ -45,8 +45,6 @@ namespace AnarchyGrabber
                 TokensFound = true;
                 tokens[tokens.Count - 1] += " - NEWEST";
             }
-            else
-                tokens.Add("No tokens found");
 
             return tokens;
         }
