@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AnarchyGrabber")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyProduct("")]
+[assembly: AssemblyCopyright("Copyright @2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
