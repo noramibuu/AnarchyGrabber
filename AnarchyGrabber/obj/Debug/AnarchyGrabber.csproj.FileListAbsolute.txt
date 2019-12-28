@@ -11,3 +11,9 @@ C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\bin\Debug\AnarchyGrabb
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\bin\Debug\AnarchyGrabber.pdb
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.exe
 C:\Users\ilink\source\repos\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.pdb
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\bin\Debug\AnarchyGrabber.exe.config
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\bin\Debug\AnarchyGrabber.exe
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\bin\Debug\AnarchyGrabber.pdb
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.csprojAssemblyReference.cache
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.exe
+C:\GitHub Desktop Projects\AnarchyGrabber\AnarchyGrabber\obj\Debug\AnarchyGrabber.pdb
